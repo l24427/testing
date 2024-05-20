@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'Zurich';
+    src: url('Zurich\ Black\ Italic\ BT.ttf');}
+
+    .custom-button {
+        z-index: 1;
+    }
+
+body {
+    font-size: 100%;
+    background: linear-gradient(90deg, #e9e9e9 16.62%, hwb(226 3% 7%) 200%);
+    width: 100%;
+    height: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.custom-button {
+    margin: 10px; /* Adiciona uma margem ao redor dos botões para evitar que eles se toquem */
+}
+
+    
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px; /* Ajuste a altura conforme necessário */
+    background-color: rgb(255, 255, 255);
+    z-index: 9999;
+    box-shadow: 3px 3px 35px rgba(0, 0, 0, 0.3); /* Garante que a barra esteja sempre no topo */
+    display: flex;
+    padding: 10px;
+    position: fixed;
+    justify-content: space-between;
+}
+.button-container {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    align-items: center;
+}
+
+
+.qualidade {
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: Zurich;
+    margin-left: 150px;
+}
+.qualidade:hover {
+    background-color: #0056b3;
+}
+
+.produção {
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: Zurich;
+    margin-left: 150px;
+}
+.produção:hover {
+    background-color: #0056b3;
+}
+
+.processos {
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: Zurich;
+    margin-left: 150px;
+}
+.processos:hover {
+    background-color: #0056b3;
+}
+.new-button {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.new-button.visible {
+    opacity: 1;
+}
+
+
+
+.manutenção {
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: Zurich;
+    margin-left: 150px;
+}
+.manutenção:hover {
+    background-color: #0056b3;
+}
+.close-button {
+    display: none; /* Inicialmente, o botão "X" estará oculto */
+    position: absolute;
+    top: 120px;
+    right: 100px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    padding: 6px;
+    border-radius: 500px;
+    font-family: Zurich;
+    padding: 10px;
+
+}
+
+img {
+    margin-top: 13px;
+}
+
+/* Estilos para telas de 1920px ou mais */
+@media screen and (min-width: 1920px) {
+    /* Exemplo: ajuste o tamanho da fonte, margens, etc. */
+    body {
+      font-size: 18px;
+      margin: 0 auto;
+    }
+
+    img {
+        max-width: 350px;
+        height: auto;
+      }
+      
+  }
+  
+  .move-up { 
+    transform: translateY(-100px); /* Mova para cima 100px */ 
+    transition: transform 0.5s ease; /* Defina a animação */ 
+} 
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+}
+
+    .qualidade{
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+
+    .produção{
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    .processos{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .manutenção{
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+
+    .imagem-rodape {
+        width: 70px;
+    margin: auto;
+    display: block;
+        }
+
+    .link-topbar {
+        align-content: center;
+        text-decoration: none;
+        color: #001c9b;
+        margin-right: 30px;
+
+        font-family: sans-serif;
+    }
+
+    .imagem {
+        height: 50px;
+    }
+
