@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="top-bar">
+        <img class='Cabeçalho-Imagem' src="new_K-C_logo_blue-removebg-preview.png" alt="img">
+        <div></div><input type="text" id="searchInput" placeholder="Pesquisar">
+        <a class="link-topbar" target="_blank" href="https://kimberlyclark.sharepoint.com/Sites/H945/">Portal Melhoria Continua</a>
+        <a class="link-reconhecimento" target="_blank" href="https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Suzano%20%20Estrelas%20do%20Ms/AllItems.aspx">Reconhecimento</a>
+    
+    </header>
+    <button id="btn-qualidade" class="my-button">QUALIDADE</button>
+    <a href="http://www.etq.kcc.com/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=670824&ETQ$SCREEN_WIDTH=1280&ETQ$SAML_LOGIN=true&ETQ$SCREEN_WIDTH=1920" target="_blank" class="my-button" id="sub-checklist">Checklist de Limpeza</a>
+
+
+    
+    
+    
+    <button id="btn-producao" class="my-button">PRODUÇÃO</button>
+    <a href="https://kimberlyclark.sharepoint.com/sites/Y4745/Shared%20Documents/Forms/AllItems.aspx?OR=Teams%2DHL&CT=1716384520551&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDA0MTEyMjMxNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&id=%2Fsites%2FY4745%2FShared%20Documents%2FProjeto%20paperless%2FFeminine%2DCare%2FProdu%C3%A7%C3%A3o%2FBOTAO%20GUIA%20TROCA%20DE%20FASE%2Epdf&viewid=b615a2b9%2Dec62%2D44d0%2Dae61%2Df53f6b455721&parent=%2Fsites%2FY4745%2FShared%20Documents%2FProjeto%20paperless%2FFeminine%2DCare%2FProdu%C3%A7%C3%A3o" target="_blank" class="my-button" id="sub-guia">Guia Troca de Fase</a>    
+    <a href="https://kimberlyclark.sharepoint.com/sites/Y4745/Shared%20Documents/Forms/AllItems.aspx?OR=Teams%2DHL&CT=1716387054951&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDA0MTEyMjMxNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&id=%2Fsites%2FY4745%2FShared%20Documents%2FProjeto%20paperless%2FFeminine%2DCare%2FProdu%C3%A7%C3%A3o%2FBOTA%20INSTRU%C3%87%C3%83O%20DE%20TRABALHO%20CORRETO%2Epdf&viewid=b615a2b9%2Dec62%2D44d0%2Dae61%2Df53f6b455721&parent=%2Fsites%2FY4745%2FShared%20Documents%2FProjeto%20paperless%2FFeminine%2DCare%2FProdu%C3%A7%C3%A3o" target="_blank" class="my-button" id="sub-trabalho">Instrução de Trabalho</a>
+    <a href="https://brsza022/PIVision/#/Displays/633/CART%C3%95ES-DE-CUIDADO-AUTONOMOS" target="_blank" class="my-button" id="sub-autonomous">Autonomous Care</a> 
+            
+
+
+
+    
+    <button id="btn-processos" class="my-button">PROCESSOS</button>
+    <a href="https://kimberlyclark.sharepoint.com/:x:/r/sites/Y4745/_layouts/15/Doc.aspx?sourcedoc=%7B56CAEFB8-EB23-417F-A880-CE5E1608149A%7D&file=PC_BR_SZ_FC_AC-22%20Plano%20de%20Controle.xlsx&action=default&mobileredirect=true" target="_blank" class="my-button" id="sub-plano">Plano de Controle</a>
+    <a href="https://kimberlyclark.sharepoint.com/:x:/r/sites/Y4745/_layouts/15/Doc.aspx?sourcedoc=%7BD4B53146-C272-43C6-88F4-568DB5990931%7D&file=AC22%20Checklist%20Arranjos%20Tempor%C3%A1rios.xlsm&action=default&mobileredirect=true" target="_blank" class="my-button" id="sub-arranjos">Checklist de Arranjos Temporários</a>
+    <a href="#" class="my-button" id="sub-lançamentos" target="_blank">Lançamentos de Parâmetros Manuais</a>
+    <a href="https://brsza022/PIVision/#/Displays/1338/AFC---Centerline-Line-Details?asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CAFC%5CAC22%3F6adb6bb2-fb16-11ee-a089-7486e2f94287" class="my-button" target="_blank" id="sub-vision">PI Vision</a>
+
+
+    <button id="btn-manutencao" class="my-button">MANUTENÇÃO</button>
+    <a href="https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/5498a537-9523-4485-8c12-e4b41fe9e227?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&source=portal#" target="_blank" class="my-button" id="sub-lsw">LSW</a>
+    
+    <script> 
+        const buttons = document.querySelectorAll('.my-button');
+const searchInput = document.getElementById('searchInput');
+
+const subButtons = {
+    'sub-checklist': 'btn-qualidade',
+    'sub-guia': 'btn-producao',
+    'sub-trabalho': 'btn-producao',
+    'sub-autonomous': 'btn-producao',
+    'sub-plano': 'btn-processos',
+    'sub-arranjos': 'btn-processos',
+    'sub-lançamentos': 'btn-processos', 
+    'sub-vision': 'btn-processos',
+    'sub-lsw': 'btn-manutencao'
+};
+
+searchInput.addEventListener('input', function () {
+    const searchTerm = searchInput.value.toLowerCase();
+    buttons.forEach(button => {
+        if (!subButtons[button.id]) {
+            return;
+        }
+
+        const buttonText = button.textContent.toLowerCase();
+        const buttonTextWithoutAccents = buttonText.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        const containsSearchTerm = buttonTextWithoutAccents.includes(searchTerm);
+        button.style.display = containsSearchTerm ? 'block' : 'none';
+        
+        if (containsSearchTerm) {
+            document.getElementById(subButtons[button.id]).style.display = 'block';
+        }
+    });
+});
+    </script>
+</body>
+</html>
