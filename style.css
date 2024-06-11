@@ -1,0 +1,307 @@
+@font-face {
+    font-family: 'Zurich';
+    src: url('Zurich\ Black\ Italic\ BT.ttf');
+}
+
+.top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px; 
+    background-color: rgb(255, 255, 255);
+    z-index: 9999;
+    box-shadow: 3px 3px 35px rgb(0, 0, 0); 
+    display: flex;
+    padding: 10px;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-topbar{
+    text-decoration: none;
+    font-family: Zurich;
+    color: #007bff;
+    min-width: 250px;
+    max-width: 800px;
+}
+
+.link-reconhecimento{
+        text-decoration: none;
+        font-family: Zurich;
+        color: #007bff;
+        min-width: 180px;
+        max-width: 800px;
+    
+}
+
+.my-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    
+}
+
+
+#searchInput {
+    text-align: center;
+    background-color: #c9c9c9;
+    color: #2c2c2c;
+    border-color: #c9c9c9;
+    border: solid;
+    border-color: rgb(82, 82, 82);
+    cursor: auto;    
+    border-radius: 25px;
+    font-family: Zurich;
+    margin-left: 180px;
+    margin-right: auto;
+    min-width: 500px;
+    max-width: 800px;
+}
+
+
+#btn-qualidade {
+width: 300px; 
+left: 95px;
+top: 150px;
+position: absolute;
+background-color: #007bff;
+color: #fff;
+border: none;
+cursor: pointer;
+border-radius: 25px;
+font-family: Zurich;
+}
+
+#btn-producao {
+    width: 300px; 
+    left: 500px;
+    top: 150px;
+    position: absolute;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: Zurich;
+}
+
+#btn-processos {
+    width: 300px; 
+    left: 1000px;
+    top: 150px;
+    position: absolute;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: Zurich;
+}
+
+
+#btn-manutencao  {
+    width: 300px; 
+    left: 1500px;
+    top: 150px;
+    position: absolute;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: Zurich;
+}
+
+#sub-checklist{
+    width: 100px;
+    height: 70px;
+    box-shadow: 4px 5px 4px rgb(0, 140, 255);
+    left: 95px;
+    top: 200px;
+    position: absolute;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: Zurich;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#sub-guia{
+    width: 100px;
+    height: 70px;
+    box-shadow: 4px 5px 4px rgb(0, 140, 255);
+    left: 500px;
+    top: 200px;
+    position: absolute;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: Zurich;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#sub-trabalho{
+    width: 100px;
+    height: 70px;
+    box-shadow: 4px 5px 4px rgb(0, 140, 255);
+    left: 690px;
+    top: 200px;
+    position: absolute;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: Zurich;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#sub-autonomous{
+    width: 100px;
+    height: 70px;
+    box-shadow: 4px 5px 4px rgb(0, 140, 255);
+    left: 500px;
+    top: 310px;
+    position: absolute;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: Zurich;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+}
+
+#sub-plano{
+    width: 100px;
+    height: 70px;
+    box-shadow: 4px 5px 4px rgb(0, 140, 255);
+    left: 1000px;
+    top: 200px;
+    position: absolute;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: Zurich;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+#sub-arranjos{
+    width: 100px;
+    height: 70px;
+    box-shadow: 4px 5px 4px rgb(0, 140, 255);
+    left: 1190px;
+    top: 200px;
+    position: absolute;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: Zurich;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#sub-lançamentos{
+    width: 100px;
+    height: 70px;
+    box-shadow: 4px 5px 4px rgb(0, 140, 255);
+    left: 1000px;
+    top: 300px;
+    position: absolute;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: Zurich;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#sub-lsw{
+    width: 100px;
+    height: 70px;
+    box-shadow: 4px 5px 4px rgb(0, 140, 255);
+    left: 1500px;
+    top: 200px;
+    position: absolute;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: Zurich;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#sub-vision{
+    width: 100px;
+    height: 70px;
+    box-shadow: 4px 5px 4px rgb(0, 140, 255);
+    left: 1190px;
+    top: 300px;
+    position: absolute;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: Zurich;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+body {
+    font-size: 100%;
+    display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+    background: linear-gradient(90deg, #e9e9e9 16.62%, hwb(226 3% 7%) 150%);
+}
+
+.Cabeçalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: #fff;
+    
+}
+
+.Cabeçalho-Imagem {
+    height: 40px;
+    margin-right: auto;
+   
+    }
+
