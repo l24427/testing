@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Um novo conceito de QI">
+    <title>Quadro Interativo teste tablet</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+        <header class="Cabeçalho">
+        <img Class="Cabeçalho-Imagem" src="new_K-C_logo_blue-removebg-preview.png">
+        <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Pesquisar">
+        <script>
+                function removeSpecialChars(str) {
+                    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^\w\s]/gi, '').toUpperCase();
+                }
+        
+                 function searchFunction() {
+                    // Obtenha o valor do campo de pesquisa
+                    var input, filter, buttons, text;
+                    input = document.getElementById('searchInput');
+                    filter = removeSpecialChars(input.value.trim());
+        
+                    // Obtenha todos os botões com a classe "Conteudo-principal-escrito-botao"
+                    buttons = document.getElementsByClassName('Conteudo-principal-escrito-botao');
+        
+                    // Percorra todos os botões e oculte aqueles que não correspondem à pesquisa
+                    for (var i = 0; i < buttons.length; i++) {
+                        // Verifique se o botão não tem a classe "PRO"
+                        if (!buttons[i].classList.contains('PRO')) {
+                            text = removeSpecialChars(buttons[i].textContent || buttons[i].innerText);
+                            if (text.indexOf(filter) > -1) {
+                                buttons[i].style.visibility = "visible";
+                            } else {
+                                buttons[i].style.visibility = "hidden";
+                            }
+                        }
+                    }
+                }
+            </script>
+            
+        <a target="_blank" class="Cabeçalho-Menu-Item" href="https://kimberlyclark.sharepoint.com/Sites/H945/">Portal de Melhoria Continua</a>
+            <nav Class="Cabeçalho-Menu">
+
+        </nav>
+        
+    </header>
+
+    <Main class="Conteudo">
+        <section class="Conteudo-principal">
+
+            <div>
+
+                <div>
+
+                </div>
+                <!--Trocar o segundo tema da esquerda para a direita-->
+                <a class="PRO">QUALIDADE</label></a>
+                <!--Trocar apenas o link de redirecionamento-->
+                <!--O style deve ser mantido, necessario para retirar o sublinhado do texto do Botão-->
+                <a target="_blank" href="http://www.etq.kcc.com/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=670824&ETQ$SCREEN_WIDTH=1280&ETQ$SAML_LOGIN=true&ETQ$SCREEN_WIDTH=1920"> <button
+                        class="Conteudo-principal-escrito-botao" style="text-decoration:none">Checklist de Limpeza
+                        </button></a>
+
+            </div>
+            
+
+            <div>
+
+                <div>
+                </div>
+                
+            </div>
+            <div>
+                <div>
+
+                </div>
+                <!--Trocar o quarto tema da esquerda para a direita-->
+                <a class="PRO">PRODUÇÃO</label></a>
+                <!--Trocar apenas o link de redirecionamento-->
+                <!--O style deve ser mantido, necessario para retirar o sublinhado do texto do botão-->
+                <a target="_blank" href="https://kimberlyclark.sharepoint.com/sites/Y4745/Shared%20Documents/Forms/AllItems.aspx?OR=Teams%2DHL&CT=1716384520551&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDA0MTEyMjMxNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&id=%2Fsites%2FY4745%2FShared%20Documents%2FProjeto%20paperless%2FFeminine%2DCare%2FProdu%C3%A7%C3%A3o%2FBOTAO%20GUIA%20TROCA%20DE%20FASE%2Epdf&viewid=b615a2b9%2Dec62%2D44d0%2Dae61%2Df53f6b455721&parent=%2Fsites%2FY4745%2FShared%20Documents%2FProjeto%20paperless%2FFeminine%2DCare%2FProdu%C3%A7%C3%A3o"> <button
+                        class="Conteudo-principal-escrito-botao" style="text-decoration:none">Guia Troca de Fase
+                        </button></a>
+                <a target="_blank" href="https://kimberlyclark.sharepoint.com/sites/Y4745/Shared%20Documents/Forms/AllItems.aspx?OR=Teams%2DHL&CT=1716387054951&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDA0MTEyMjMxNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&id=%2Fsites%2FY4745%2FShared%20Documents%2FProjeto%20paperless%2FFeminine%2DCare%2FProdu%C3%A7%C3%A3o%2FBOTA%20INSTRU%C3%87%C3%83O%20DE%20TRABALHO%20CORRETO%2Epdf&viewid=b615a2b9%2Dec62%2D44d0%2Dae61%2Df53f6b455721&parent=%2Fsites%2FY4745%2FShared%20Documents%2FProjeto%20paperless%2FFeminine%2DCare%2FProdu%C3%A7%C3%A3o"> <button
+                        class="Conteudo-principal-escrito-botao" style="text-decoration:none">Instrução de de Trabalho
+                        </button></a>
+                <a target="_blank" href="https://brsza022/PIVision/#/Displays/633/CART%C3%95ES-DE-CUIDADO-AUTONOMOS"> <button
+                        class="Conteudo-principal-escrito-botao" style="text-decoration:none">Autonomous Care</button></a>
+                <a target="_blank" href="https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/c88550a3-4103-4833-9e7e-376ef5d1868f/ReportSection4372809651d13a611de8?experience=power-bi"> <button
+                        class="Conteudo-principal-escrito-botao" style="text-decoration:none">CI / TI
+                        </button></a>                
+
+
+
+            </div>
+
+            <div>
+
+                <div>
+                </div>
+                <!--Trocar o quinto tema da esquerda para a direita-->
+                <a class=" PRO">PROCESSOS</label></a>
+                <!--Trocar apenas o link de redirecionamento-->
+                <!--O style deve ser mantido, necessario para retirar o sublinhado do texto do botão-->
+                <a target="_blank" href="http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=660909&ETQ$ORIGINAL_DOC_ID=660149"> <button
+                        class="Conteudo-principal-escrito-botao" style="text-decoration:none">Plano de Controle
+                        </button></a>
+                <a target="_blank" href="https://kimberlyclark.sharepoint.com/:x:/r/sites/Y4745/_layouts/15/Doc.aspx?sourcedoc=%7BD4B53146-C272-43C6-88F4-568DB5990931%7D&file=AC22%20Checklist%20Arranjos%20Tempor%C3%A1rios.xlsm&action=default&mobileredirect=true"> <button
+                        class="Conteudo-principal-escrito-botao" style="text-decoration:none">Checklist de Arranjos Temporários
+                        </button></a>
+                <a target="_blank" href=""> <button
+                        class="Conteudo-principal-escrito-botao" style="text-decoration:none">Lançamentos de Parâmetros Manuais
+                        </button></a>
+                <a target="_blank" href="https://brsza022/PIVision/#/Displays/1338/AFC---Centerline-Line-Details?asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CAFC%5CAC22%3F6adb6bb2-fb16-11ee-a089-7486e2f94287"> <button
+                        class="Conteudo-principal-escrito-botao" style="text-decoration:none">PI Vision
+                        </button></a>
+                        <a target="_blank" href="https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Suzano%20%20Estrelas%20do%20Ms/AllItems.aspx"> <button
+                            class="Conteudo-principal-escrito-botao" style="text-decoration:none">Reconheci
+                            mento
+                            </button></a>        
+
+            </div>
+            <div>
+
+                <div>
+                </div>
+                <!--Trocar o quinto tema da esquerda para a direita-->
+                <a class=" PRO">MANUTENÇÃO</label></a>
+                <!--Trocar apenas o link de redirecionamento-->
+                <!--O style deve ser mantido, necessario para retirar o sublinhado do texto do botão-->
+                <a target="_blank" href="https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/5498a537-9523-4485-8c12-e4b41fe9e227?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&source=portal#" target="_blank"> <button
+                        class="Conteudo-principal-escrito-botao" style="text-decoration:none">LSW
+
+
+            </div>
+
+        </section>
+
+        <Section class="Conteudo-secundario">
+        </Section>
+    </Main>
+
+    
+        <img class="rodape-imagem" src="image.png">
+    
+
+
+</body>
+
+</html>
